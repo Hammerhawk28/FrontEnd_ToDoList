@@ -1,0 +1,11 @@
+#addForm {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #15616D;
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: #15616D;
+    margin-bottom: 10px;
+}

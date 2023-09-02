@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #15616D;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #FF7D00;
+    color: #001524;
+}
+
+#listHome {
+    color: #001524;
+    cursor: pointer;
+}
+
+#listHome:hover {
+    color: #ffffff
+}
+
+.navbar-end {
+    color: #001524;
+    cursor: pointer;
+}
+
+.navbar-end:hover {
+    color: #ffffff
+}

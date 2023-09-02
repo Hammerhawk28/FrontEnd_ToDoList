@@ -1,0 +1,22 @@
+.container-fluid {
+    background-color: #78290f;
+    margin-bottom: 20px;
+    width: 100%;
+    border: solid 2px #15616D;
+    border-radius: 5px;
+}
+
+.dropdown {
+    width: auto;
+    height: 55px;
+    margin: auto;
+    border-color: #FF7D00;
+}
+
+.btn-primary {
+    width: auto;
+    height: 55px;
+    margin: auto;
+    background-color: #15616D;
+    border: solid 2px #FF7D00
+}

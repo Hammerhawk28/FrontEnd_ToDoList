@@ -1,0 +1,15 @@
+.btn {
+    background-color: #15616D;
+    margin-bottom: 10px;
+}
+
+#registerForm {
+    border: solid 2px #FF7D00;
+}
+
+.alert {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: red;
+    color: red;
+}

@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row row-cols-3">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort List
+            </button>
+            <div class="dropdown-menu col-sm-auto" aria-labelledby="sortDropdown">
+                <button class="dropdown-item" type="button" (click)="sortBy('name')">Name</button>
+                <button class="dropdown-item" type="button"(click)="sortBy('priority')">Priority</button>
+                <button class="dropdown-item" type="button" (click)="sortBy('status')">Status</button>
+            </div>
+        </div>
+        <div class="dropdown col-sm-auto">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="selectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select List
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="selectDropdown">
+                <li><button class="dropdown-item" type="button" (click)="selectBy('Not Started')">Not Started</button></li>
+                <li><button class="dropdown-item" type="button"(click)="selectBy('In Progress')">In Progress</button></li>
+                <li><button class="dropdown-item" type="button" (click)="selectBy('Complete')">Complete</button></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><button class = dropdown-item type="button" (click)="selectBy('High')">High</button></li>
+                <li><button class = dropdown-item type="button" (click)="selectBy('Medium')">Medium</button></li>
+                <li><button class = dropdown-item type="button" (click)="selectBy('Low')">Low</button></li>
+            </ul>
+        </div>
+        <button class="btn btn-primary col-sm-auto" (click)="addItemPrompt()">Add New</button>
+    </div>
+</div>

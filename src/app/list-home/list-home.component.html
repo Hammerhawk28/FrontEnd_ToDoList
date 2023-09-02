@@ -1,0 +1,13 @@
+<app-navbar (newSearch)="updateSearch($event)"></app-navbar>
+<div class="container">
+    <h1>Current To Do List </h1>
+</div>
+<app-dashbar (newSort)="updateSort($event)"></app-dashbar>
+<div class="container text-center">
+    <div class="row-cols-12">
+        <div *ngFor="let item of userList" >
+            <app-item-card [item]="item" class="card-deck mt-2"></app-item-card>
+        </div>
+    </div>
+</div>
+

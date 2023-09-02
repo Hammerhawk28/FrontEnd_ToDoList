@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+
+<h1>Add Somthing To Do</h1>
+
+<div *ngIf="checkResult()===true" class="alert alert-success">
+    Item was added to your list
+</div>
+<div *ngIf="checkResult()===false" class="alert alert-danger">
+    Unable to add item, try a different name
+</div>
+
+<div class="conatiner" id="addForm">
+    <form #addItemForm="ngForm" (ngSubmit)="addItem()">
+        <div *ngIf="formError" class="alert alert-danger">
+            {{ formError }}
+        </div>
+        <label for="itemName" class="form-label">Name:</label>
+        <input type="text" required class="form-control" name="itemName" #itemName="ngModel"
+            [(ngModel)] = itemCredentials.name><br>
+        <label for="priority" class="form-label">Priority:</label>
+        <select class="form-control form-select-lg" name="priority" #priority="ngModel" aria-label="prioritySelect" [(ngModel)]="itemCredentials.priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select><br>
+        <label for="description" class="form-label">Description:</label>
+        <input type="text" class="form-control" #description="ngModel" name="description"
+            [(ngModel)]="itemCredentials.description"><br>
+        <label for="estTime" class="form-label">Estimate Time:</label>
+        <input type="text" class="form-control" #estTime="ngModel" name="estTime"
+            [(ngModel)]="itemCredentials.estTime"><br>
+        <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+</div>

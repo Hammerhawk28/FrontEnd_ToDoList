@@ -1,0 +1,16 @@
+#dialogContainer {
+    background-color: #156160;
+}
+
+#cancelButton {
+    background-color: #ff7d00;
+    margin-right: 10px;
+}
+
+#deleteButton {
+    background-color: #ff7d00;
+}
+
+#itemName {
+    color: #ffffff
+}

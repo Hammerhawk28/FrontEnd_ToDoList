@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Welcome to the To Do List App</h1>
+    <div class="container" id="loginForm">
+        <h2>Login or Create Account to Continue</h2>
+        <form #loginForm="ngForm" (ngSubmit)="onLoginSubmit()">
+            <div *ngIf="formError" class="alert alert-danger">
+                {{ formError }}
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="text" required #email="ngModel" name="email" id="email" class="form-control"
+                    [(ngModel)]="credentials.email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label><br>
+                <input type="password" required #password="ngModel" name="password" id="password" class="form-control" [(ngModel)]="credentials.password">
+            </div>
+            <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Don't have an account? Create One Below</h2>
+        <button class="btn btn-info" (click)="createAccount()">Create Account</button>
+    </div>
+</div>

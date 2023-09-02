@@ -1,0 +1,19 @@
+
+.btn {
+    background-color: #15616D;
+    margin-bottom: 10px;
+}
+
+#loginForm {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FF7D00;
+    margin-top: 40px;
+}
+
+.alert {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: red;
+    color: red;
+}

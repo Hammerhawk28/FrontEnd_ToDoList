@@ -1,0 +1,24 @@
+<div class="card" style="width: 18rem">
+    <div class="card-body">
+        <h5 class="card-title">{{ item.name }} </h5>
+        <p class="card-text">Priority Level: {{ item.priority }} </p>
+        <p class="card-text">Status: {{ item.status }}
+        <div class="card-body">
+            <p>{{ item.description }} </p>
+            <div class="container">
+                <button type="button" class="btn btn-info" (click)="openModal()">Delete Item</button>
+                <button class="btn btn-info" (click)="editItem(item)">Edit Item</button>
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" id="statusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Change Status
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="statusDropdown">
+                        <button class="dropdown-item" type="button" (click)="changeStatus(item, 'Not started')">Not started</button>
+                        <button class="dropdown-item" type="button" (click)="changeStatus(item, 'In Progress')">In Progress</button>
+                        <button class="dropdown-item" type="button" (click)="changeStatus(item, 'Complete')">Complete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

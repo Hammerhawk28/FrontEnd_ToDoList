@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<h1>Edit To Do Item</h1>
+
+<div *ngIf="checkResult()===true" class="alert alert-success">
+    Item has been updated
+</div>
+<div *ngIf="checkResult()===false" class="alert alert-danger">
+    Unable to update item
+</div>
+<div class="container">
+    <form [formGroup]="editForm" (ngSubmit)="editItem()">
+        <label for="name">Name:</label>
+        <input readonly type="text" class="form-control" formControlName="name" id="name"><br>
+        <label for="priority">Priority:</label>
+        <select class="form-control form-select-lg" formControlName="priority" id="priority" aria-label="prioritySelect">
+            <option id="selectedPriority" selected></option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select><br>
+        <label for="description">Description:</label>
+        <input type="text" class="form-control" formControlName="description" id="description"><br>
+        <label for="status">Status:</label>
+        <select class="form-control form-select-lg" formControlName="status" id="status" aria-label="statusSelect">
+            <option id="selectedStatus" selected></option>
+            <option value="Not Started">Not Started</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Complete">Complete</option>
+        </select><br>
+        <label for="estTime">Estimate Time:</label>
+        <input type="text" class="form-control" formControlName="estTime" id="estTime"><br>
+        <button type="submit" class="btn btn-primary" [disabled]="!editForm.valid">Save Update</button>
+    </form>
+
+</div>

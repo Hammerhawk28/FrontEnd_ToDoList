@@ -1,0 +1,21 @@
+
+/* Element Styling */
+div {
+    text-align: center;
+}
+
+h1 {
+    font-style: italic;
+    font-size: xx-large;
+    color: #FFECD1
+}
+
+h2 {
+    font-size: large;
+    color: #FFECD1
+}
+
+label {
+    color: #FFECD1
+}
+

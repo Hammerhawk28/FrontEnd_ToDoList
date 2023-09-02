@@ -1,0 +1,27 @@
+.card {
+    margin-bottom: 10px;
+    background-color: #78290F;
+    border: solid 2px #15616D;
+    border-radius: 10px;
+}
+.card-title {
+    color: #FFECD1;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #FFECD1;
+    font-weight: bold;
+}
+
+.btn-info {
+    background-color: #FF7D00;
+    color: #001524;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 150px;
+    border: solid 2px #15616D
+}
